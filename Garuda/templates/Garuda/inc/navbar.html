@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+</head>
+<body>
+    <nav class="navbar-one flex" style="height: 80px;">
+        <div class="logo">
+            <img src="{% static 'images/logo.png' %}" class="logo" alt="Garuda Constructions" width="250" height="90">
+        </div>
+           
+    </nav>
+
+    <nav class="navbar-second flex">
+        <!-- <div class="Garuda">
+            <h1>Garuda</h1>
+        </div> -->
+        <ul class="flex">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/projects">Project</a></li>           
+            <li><a href="/contact">Contact</a></li>           
+        </ul>
+    </nav>
+    <section></section>
+</body>
+</html>

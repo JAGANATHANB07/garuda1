@@ -1,0 +1,57 @@
+{% extends 'Garuda/layouts/main.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: darkslategray;
+    }
+    .images img{
+        margin-left: 10px;
+        margin-bottom: 20px;
+        width: 350px;
+        height: 350px;
+        padding: 20px;
+        transition: 0.5s ease;
+    }
+    img:hover{
+        transform: scale(1.2);
+    }
+    h1{
+        text-align: center;
+        color: white;
+    }
+</style>
+<body>
+    <h1>Our Projects</h1>
+    <hr>
+    <hr>
+    </br></br>
+    <div class="container col-4">
+        <div class="images row-4">
+            <img src="{% static 'images/projects/1.jpeg' %}" class="rounded " alt="">
+            <img src="{% static 'images/projects/2.jpeg' %}" class="rounded " alt="">
+            <img src="{% static 'images/projects/3.jpeg' %}" class="rounded " alt="">
+            <img src="{% static 'images/projects/4.jpeg' %}" class="rounded "alt="">
+            <img src="{% static 'images/projects/5.jpeg' %}"  class="rounded " alt="">
+            <img src="{% static 'images/projects/6.jpeg' %}"  class="rounded "alt="">
+            <img src="{% static 'images/projects/7.jpeg' %}" class="rounded "alt="">
+            <img src="{% static 'images/projects/8.jpeg' %}" class="rounded " alt="">
+            <img src="{% static 'images/projects/9.jpeg' %}" class="rounded " alt="">
+            <img src="{% static 'images/projects/10.jpeg' %}" class="rounded"alt="">
+            <img src="{% static 'images/projects/11.jpeg' %}" class="rounded"alt="">
+            <img src="{% static 'images/projects/12.jpeg' %}" class="rounded"alt="">
+            <img src="{% static 'images/projects/13.jpeg' %}" class="rounded" alt="">
+            <img src="{% static 'images/projects/14.jpeg' %}" class="rounded" alt="">
+            <img src="{% static 'images/projects/15.jpeg' %}" class="rounded" alt="">
+        </div>
+    </div>
+</body>
+</html>
+{% endblock content %}

@@ -1,0 +1,84 @@
+{% extends 'Garuda/layouts/main.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    background-image: url("{% static 'images/background/contact.jpg' %}");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .image img {
+    width: 160px;
+    height: 160px;
+    border-radius: 120px;
+    /* margin-left: 580px; */
+    justify-content: center;
+  }
+
+  .text h1 {
+    text-align: center;
+    color: white;
+  }
+
+  .text h2 {
+    color: white;
+    text-align: center;
+  }
+
+  .text h3 {
+    text-align: center;
+    color: white;
+  }
+
+  .text h4 {
+
+    text-align: center;
+    color: white;
+
+  }
+
+  .text h5 {
+    color: white;
+    text-align: center;
+  }
+</style>
+
+<body>
+  <div class="container text-center">
+    <div class="row justify-content-start">
+      <div class="image row-4">
+        <img src="{% static 'images/founder/2.jpeg' %}">
+      </div>
+      <div class="text row-4">
+        <h1>A.Vijaya shunmugam. B-TECH [CIVIL]</h1>
+        <h2>Founder and Managing Director</h2>
+        <h3>Ph no: 6379393830</h3>
+      </div>
+    </div>
+    <div class="container text-center">
+      <div class="row justify-content-start">
+        <div class="image row-4">
+          <img src="{% static 'images/founder/1.jpeg' %}">
+        </div>
+        <div class="text row-4">
+          <h1>S.PREM KUMAR. B-TECH</h1>
+          <h4>MBA-CEO</h4>
+          <h5>Ph no: 9003576179</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+{% endblock content %}

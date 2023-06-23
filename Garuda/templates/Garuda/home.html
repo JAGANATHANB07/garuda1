@@ -1,0 +1,116 @@
+
+{% extends 'Garuda/layouts/main.html' %}
+
+{% load static %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+    body{
+        background-image: url("{% static 'images/background/home.jpg' %}");
+    }
+    h1{
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    p{
+      text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-weight: bold;
+    }
+    .col img{
+      width: 280px;
+      height: 150px;
+    }
+</style>
+<body>
+  <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/slider/1.jpg' %}" class="d-block w-100" alt="Slide 1">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/slider/2.jpg' %}" class="d-block w-100" alt="Slide 2">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/slider/3.jpg' %}" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+    <h1>About_Us</h1>
+    <p>With so many ways to enter a career in construction, it can be difficult to know where to start. We've put together some information on the main routes into the industry, to help you figure out which is right for you.</p>
+    <p>Construction is fun, fast paced, challenging and a rewarding career! You will meet various people on all levels of businesses and with that come amazing opportunities.</p>
+    <p>Working in construction is a very exciting and rewarding career to go into. You get to work with a great variety of people to create something that will benefit society.</p>
+
+
+<div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'images/cons/cons1.jpeg' %}" class="card-img-top" alt="images">
+        <div class="card-body">
+          <!-- <h5 class="card-title">Card title</h5> -->
+          <p class="card-text">When there is a plan to develop a new building, it is very necessary to have an idea about the start and the end of the building project.</p>
+        </div>
+        <!-- <div class="card-footer"> -->
+          <!-- <small class="text-body-secondary">Last updated 3 mins ago</small> -->
+        </div>
+      
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'images/cons/cons2.jpeg' %}" class="card-img-top" alt="images">
+        <div class="card-body">
+          
+          <p class="card-text">When there is a plan to develop a new building, it is very necessary to have an idea about the start and the end of the building project.</p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="{% static 'images/cons/cons3.jpeg' %}" class="card-img-top" alt="images">
+        <div class="card-body">
+          
+          <p class="card-text">When there is a plan to develop a new building, it is very necessary to have an idea about the start and the end of the building project.</p>
+        </div>
+        
+          
+        
+      </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+          <img src="{% static 'images/cons/cons4.jpeg' %}" class="card-img-top" alt="images">
+          <div class="card-body">
+            
+            <p class="card-text">When there is a plan to develop a new building, it is very necessary to have an idea about the start and the end of the building project.</p>
+          </div>
+          
+        </div>
+      </div>
+  </div>    
+</body>
+</html>
+
+
+
+{% endblock content %}
